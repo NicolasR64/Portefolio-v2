@@ -16,7 +16,7 @@ export default function ExperienceSection({ experiences }: ExperiencesectionProp
                 const overlap      = isEven ? "md:-ml-24" : "md:-mr-24"
                 const technologiesAlign = isEven ? "flex-row-reverse" : "flex-row"
                     return (
-                        <div key={exp.startDate} className="grid sm:grid-row md:grid-cols-12 pt-8 fadeIn">
+                        <div key={exp.startDate} className="grid sm:grid-row md:grid-cols-12 pt-8 reveal">
                             <div className={`md:col-span-7 ${imageColumns} md:row-start-1 h-auto w-full flex items-center justify-center`}>
                                 <img className="w-full rounded-xl" src={exp.image} alt={exp.title} />
                             </div>

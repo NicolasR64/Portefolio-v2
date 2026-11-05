@@ -28,7 +28,6 @@
     @apply bg-background text-foreground font-sans antialiased;
     box-sizing: border-box;
     color: var(--color-foreground);
-    background-color: var(--color-background);
   }
 
   h1, h2, h3 {
@@ -49,6 +48,6 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
+  from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
