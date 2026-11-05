@@ -1,5 +1,6 @@
 import ExperienceSection from "./components/ExperienceSection.tsx"
-import { experiences } from "./cv"
+import ProjectSection from "./components/ProjectSection.tsx"
+import { experiences, projects } from "./cv"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           I'm a web developer and I love to create beautiful and functional websites.
         </p>
         <ExperienceSection experiences={experiences} />
+        <ProjectSection projects={projects} />
       </main>
     </>
   )
