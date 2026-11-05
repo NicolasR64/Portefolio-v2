@@ -33,6 +33,15 @@
   h1, h2, h3 {
     @apply font-serif font-semibold text-foreground;
   }
+
+  h2 {
+    @apply text-3xl md:text-4xl mb-6;
+    @apply text-primary;
+  }
+
+  section {
+    @apply text-center;
+  }
 }
 
 @layer components {
