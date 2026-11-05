@@ -6,7 +6,7 @@ export const projects: Project[] = [
         title: "Portfolio",
         description: "My personal portfolio website, built with React and TypeScript.",
         date: "2023-01-01",
-        image: "/images/portfolio.png",
+        image: easiLogo,
         links: [],
         technologies: ["React", "TypeScript", "CSS"],
         type: "Web Development"
