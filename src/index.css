@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@theme {
+  /* ── Fonds ───────────────────────────── */
+  --color-background: #F5F3EC;   /* brume / papier : fond de page */
+  --color-surface: #FFFFFF;      /* fond des cards */
+
+  /* ── Textes ──────────────────────────── */
+  --color-foreground: #1F2A24;   /* sous-bois : texte principal, titres */
+  --color-muted: #5B6B60;        /* mousse grise : texte secondaire, dates */
+
+  /* ── Couleurs de marque ──────────────── */
+  --color-primary: #2F5D46;      /* forêt profonde : liens, boutons */
+  --color-primary-hover: #24493A;/* sapin : survol */
+  --color-accent: #B7793F;       /* bois / ambre : touches décoratives */
+
+  /* ── Bordures ────────────────────────── */
+  --color-border: #D9D4C7;       /* lichen : contours, séparateurs */
+
+  /* ── Polices ─────────────────────────── */
+  --font-sans: "Inter Variable", system-ui, sans-serif;     /* texte : police par défaut */
+  --font-serif: "Fraunces Variable", Georgia, serif;        /* titres */
+
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif font-semibold text-foreground;
+  }
+}
+
+main{
+    box-sizing: border-box;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+}
