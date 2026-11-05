@@ -1,4 +1,5 @@
 import type { Experience, Project, Skill } from './type'
+import easiLogo from './assets/img/Logo_Easi.gif'
 
 export const projects: Project[] = [
     {
@@ -18,7 +19,7 @@ export const experiences: Experience[] = [
         description: "Software developer on Adfinity, the ERP built by Easi and used by 10,000+ users. Full-stack development with WinDev/WLanguage, back-end REST APIs and SQL Server databases.",
         startDate: "2024-07-01",
         endDate: "2024-12-31",
-        image: "src\assets\img\Logo_Easi.gif",
+        image: easiLogo,
         links: [],
         technologies: ["WinDev", "WLanguage", "SQL Server", "REST API", "C#"],
         type: "Professional Experience",
@@ -28,7 +29,7 @@ export const experiences: Experience[] = [
         description: "Enterprise IT consultant at Easi (Nivelles), working on business software projects for clients before moving to the Adfinity ERP development team.",
         startDate: "2023-09-01",
         endDate: "2024-06-30",
-        image: "src\assets\img\Logo_Easi.gif",
+        image: easiLogo,
         links: [],
         technologies: ["Javascript", "jQuery", "HTML", "CSS", "react", "Power Platform", "Lotus Notes"],
         type: "Professional Experience",
@@ -38,7 +39,7 @@ export const experiences: Experience[] = [
         description: "**Internship at Easi (Nivelles), working on business software projects for clients before moving to the Adfinity ERP development team.",
         startDate: "2023-02-01",
         endDate: "2023-05-31",
-        image: "src\assets\img\Logo_Easi.gif",
+        image: easiLogo,
         links: [],
         technologies: ["WinDev", "SQL Server", "Power Platform"],
         type: "Professional Experience",
