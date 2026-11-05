@@ -1,3 +1,6 @@
+import ExperienceSection from "./components/ExperienceSection.tsx"
+import { experiences } from "./cv"
+
 function App() {
   return (
     <>
@@ -6,9 +9,9 @@ function App() {
         <p className="description">
           I'm a web developer and I love to create beautiful and functional websites.
         </p>
+        <ExperienceSection experiences={experiences} />
       </main>
     </>
   )
 }
-
 export default App
