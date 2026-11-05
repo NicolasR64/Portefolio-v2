@@ -21,6 +21,12 @@
   --font-sans: "Inter Variable", system-ui, sans-serif;     /* texte : police par défaut */
   --font-serif: "Fraunces Variable", Georgia, serif;        /* titres */
 
+  /* ── Sections sombres ────────────────── */
+  --color-background-dark: #1F3A2E;   /* sous-bois profond */
+  --color-foreground-dark: #F5F3EC;   /* texte sur fond sombre */
+  --color-primary-light: #9BC1A3;     /* sauge : titres/liens sur fond sombre */
+  --color-accent-light: #D9A066;      /* ambre clair */
+
 }
 
 @layer base {
@@ -40,7 +46,7 @@
   }
 
   section {
-    @apply text-center;
+    @apply text-center max-w-5xl mx-auto;
   }
 }
 
