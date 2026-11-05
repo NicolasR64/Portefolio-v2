@@ -7,7 +7,7 @@ type ProjectSectionProps = {
 export default function ProjectSection({ projects }: ProjectSectionProps) {
     return (
         <section className="place-content-center mx-auto">
-            <h2>Projects</h2>
+            <h2 className="text-primary">Projects</h2>
             {projects.map((project, index) => {
                 const isEven = index % 2 === 0;
                 const imageColumns = isEven ? "md:col-start-1 md:col-end-7" : "md:col-start-6 md:col-end-12"

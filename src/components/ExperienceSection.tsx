@@ -21,7 +21,7 @@ export default function ExperienceSection({ experiences }: ExperiencesectionProp
                                 <img className="w-full rounded-xl" src={exp.image} alt={exp.title} />
                             </div>
                             <div className={`md:col-span-5 ${textColumns} md:row-start-1 pl-4 py-12 ${textAlign}`}>
-                                <h3 className="text-primary">{exp.title}</h3>
+                                <h3>{exp.title}</h3>
                                 <p className="text-accent">{exp.startDate} - {exp.endDate}</p>
                                 <p className={`relative z-10 ${overlap} bg-background p-4 my-4 rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.4)]`}>{exp.description}</p>
                                 <div className="">
