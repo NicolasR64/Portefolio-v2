@@ -42,7 +42,11 @@
 
   h2 {
     @apply text-3xl md:text-4xl mb-6;
-    @apply text-primary;
+    color: var(--color-primary);
+  }
+
+  h3{
+    color: var(--color-primary);
   }
 
   section {
@@ -59,6 +63,16 @@
         animation-range: entry 0% entry 60%;
       }
     }
+  }
+
+  .section-dark {
+    --color-background: var(--color-background-dark);
+    --color-foreground: var(--color-foreground-dark);
+    --color-primary: var(--color-primary-light);
+    --color-accent: var(--color-accent-light);
+
+    background-color: var(--color-background);
+    color: var(--color-foreground);
   }
 }
 
