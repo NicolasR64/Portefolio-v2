@@ -7,7 +7,7 @@ type WaveDividerProps = {
 export default function WaveDivider({ color = "fill-background", flip = false, className = "" }: WaveDividerProps) {
     return (
         <svg
-            className={`block w-full ${color} ${flip ? "rotate-180 bottom-1" : "top-1"} ${className} relative`}
+            className={`block w-full h-16 md:h-24 ${color} ${flip ? "rotate-180 -mt-px" : "-mb-px"} ${className}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
             preserveAspectRatio="none"
