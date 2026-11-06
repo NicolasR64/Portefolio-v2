@@ -31,15 +31,15 @@ export default function Hero() {
     return (
         <header className="section-dark relative isolate overflow-hidden min-h-svh flex items-center bg-linear-to-b from-background-dark to-[#142820]">
             <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pb-48 md:pb-64 pt-24 text-center">
-                <p className="text-accent uppercase tracking-[0.3em] text-sm mb-6">Software Developer</p>
-                <h1 className="text-5xl md:text-7xl leading-tight mb-6">
+                <p className="text-accent uppercase tracking-[0.3em] text-sm mb-6 reveal">Software Developer</p>
+                <h1 className="text-5xl md:text-7xl leading-tight mb-6 reveal delay-150">
                     Nicolas Ravaux
                 </h1>
-                <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed opacity-90 mb-10">
+                <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed text-foreground/90 mb-10 reveal delay-300">
                     I build reliable business applications — from REST APIs and databases
                     to the interfaces people use every day.
                 </p>
-                <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-4 reveal delay-500">
                     <a
                         href="#projects"
                         className="rounded-full bg-primary text-background-dark font-medium px-7 py-3 transition hover:brightness-110"

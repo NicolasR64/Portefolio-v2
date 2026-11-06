@@ -1,7 +1,7 @@
-import { useEffect } from "react"
+import { useLayoutEffect } from "react"
 
 export default function useReveal() {
-    useEffect(() => {
+    useLayoutEffect(() => {
         const root = document.documentElement
         root.classList.add("reveal-ready")
 
