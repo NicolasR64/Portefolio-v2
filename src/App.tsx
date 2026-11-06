@@ -3,8 +3,11 @@ import Hero from "./components/Hero.tsx"
 import ProjectSection from "./components/ProjectSection.tsx"
 import WaveDivider from "./components/WaveDivider.tsx"
 import { experiences, projects } from "./cv"
+import useReveal from "./hooks/useReveal.ts"
 
 function App() {
+  useReveal()
+
   return (
     <>
       <main className="w-full">
