@@ -6,7 +6,7 @@ type ProjectSectionProps = {
 
 export default function ProjectSection({ projects }: ProjectSectionProps) {
     return (
-        <section id="projects" className="place-content-center mx-auto">
+        <section id="projects" className="place-content-center mx-auto py-12">
             <h2 className="text-primary">Projects</h2>
             {projects.map((project, index) => {
                 const isEven = index % 2 === 0;
