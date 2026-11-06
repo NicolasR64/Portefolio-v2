@@ -1,8 +1,9 @@
 import ExperienceSection from "./components/ExperienceSection.tsx"
 import Hero from "./components/Hero.tsx"
 import ProjectSection from "./components/ProjectSection.tsx"
+import SkillSection from "./components/SkillSection.tsx"
 import WaveDivider from "./components/WaveDivider.tsx"
-import { experiences, projects } from "./cv"
+import { experiences, projects, skills } from "./cv"
 import useReveal from "./hooks/useReveal.ts"
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
         </div>
         <WaveDivider color="fill-background-dark" flip />
         <ProjectSection projects={projects} />
+        <SkillSection skills={skills} />
       </main>
     </>
   )
