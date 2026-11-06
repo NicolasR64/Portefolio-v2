@@ -10,7 +10,26 @@ export const projects: Project[] = [
         links: [],
         technologies: ["React", "TypeScript", "CSS"],
         type: "Web Development"
+    },
+    {
+        title: "Portfolio",
+        description: "My personal portfolio website, built with React and TypeScript.",
+        date: "2023-01-01",
+        image: easiLogo,
+        links: [],
+        technologies: ["React", "TypeScript", "CSS"],
+        type: "Web Development"
+    },    
+    {
+        title: "Portfolio",
+        description: "My personal portfolio website, built with React and TypeScript.",
+        date: "2023-01-01",
+        image: easiLogo,
+        links: [],
+        technologies: ["React", "TypeScript", "CSS"],
+        type: "Web Development"
     }
+
 ]
 
 export const experiences: Experience[] = [
@@ -50,61 +69,73 @@ export const skills: Skill[] = [
     {
         name: "React",
         image: "/images/react.png",
-        link: "https://react.dev/"
+        link: "https://react.dev/",
+        categories: ["Frontend"]
     },
     {
         name: "TypeScript",
         image: "/images/typescript.png",
-        link: "https://www.typescriptlang.org/"
+        link: "https://www.typescriptlang.org/",
+        categories: ["Frontend", "Backend"]
     },
     {
         name: "JavaScript",
         image: "/images/javascript.png",
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        categories: ["Frontend"]
     },
     {
         name: "HTML",
         image: "/images/html.png",
-        link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        categories: ["Frontend"]
     },
     {
         name: "CSS",
         image: "/images/css.png",
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        categories: ["Frontend"]
     },
     {
         name: "SQL Server",
         image: "/images/sqlserver.png",
-        link: "https://www.microsoft.com/en-us/sql-server"
+        link: "https://www.microsoft.com/en-us/sql-server",
+        categories: ["Database"]
     },
     {
         name: "WinDev",
         image: "/images/windev.png",
-        link: "https://www.pcsoft.fr/windev/"
+        link: "https://www.pcsoft.fr/windev/",
+        categories: ["Frontend","Backend"]
     },
     {
         name: "WLanguage",
         image: "/images/wlanguage.png",
-        link: "https://www.pcsoft.fr/wlanguage/"
+        link: "https://www.pcsoft.fr/wlanguage/",
+        categories: ["Backend"]
     },
     {
         name: "Power Platform",
         image: "/images/powerplatform.png",
-        link: "https://powerplatform.microsoft.com/"
+        link: "https://powerplatform.microsoft.com/",
+        categories: ["Frontend","Backend"]
     },
     {
         name: "C#",
         image: "/images/csharp.png",
-        link: "https://learn.microsoft.com/en-us/dotnet/csharp/"
+        link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
+        categories: ["Backend"]
     },
     {
         name: "jQuery",
         image: "/images/jquery.png",
-        link: "https://jquery.com/"
+        link: "https://jquery.com/",
+        categories: ["Frontend"]
     },
     {
         name: "Lotus Notes",
         image: "/images/lotusnotes.png",
-        link: "https://www.ibm.com/products/lotus-notes"
+        link: "https://www.ibm.com/products/lotus-notes",
+        categories: ["Frontend","Backend"]
     }
 ]

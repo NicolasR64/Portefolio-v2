@@ -12,7 +12,10 @@ export type Skill = {
     name: string,
     image: string,
     link: string
+    categories: skill_categories[]
 }
+export const SKILL_CATEGORIES = ["Frontend", "Backend", "Database", "DevOps", "Other"] as const
+export type skill_categories = typeof SKILL_CATEGORIES[number]
 
 export type Experience = {
     title: string,
