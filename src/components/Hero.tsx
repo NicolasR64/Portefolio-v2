@@ -1,13 +1,6 @@
-/**
- * Hero "lisière de forêt" : fond vert profond + collines superposées.
- * La dernière couche a la couleur sauge de la section About pour une transition sans couture.
- * Les couches du fond bougent avec un léger effet de parallaxe au scroll (voir .parallax dans index.css).
- */
-
 type HillLayer = {
     path: string
     fill: string
-    /** Distance parcourue pendant le scroll : plus la couche est loin, plus elle "traîne" */
     shift: string
 }
 
@@ -27,8 +20,7 @@ const hills: HillLayer[] = [
         fill: "#6E957A",
         shift: "[--parallax-shift:40px]",
     },
-    {
-        // Couche de premier plan : couleur de la section About, ne bouge pas
+    {        
         path: "M0,288C240,264,420,304,640,288C860,272,1080,300,1260,286C1340,280,1400,284,1440,288L1440,320L0,320Z",
         fill: "#E3EBDF",
         shift: "",
