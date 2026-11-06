@@ -29,7 +29,7 @@ function App() {
                   new tech stacks and enjoy working closely with teams on complex projects.
                 </p>
                 <p>
-                  Rigorous, autonomous and quality-driven, with solid experience in API architecture,
+                  Rigorous, autonomous and quality-driven, with experience in API,
                   business data management and technical migrations.
                 </p>
               </div>
