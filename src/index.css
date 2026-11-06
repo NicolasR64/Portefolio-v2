@@ -30,6 +30,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     box-sizing: border-box;
@@ -55,6 +59,17 @@
 }
 
 @layer components {
+  /* Parallaxe du hero : chaque couche descend de --parallax-shift pendant le premier écran de scroll */
+  @supports (animation-timeline: scroll()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .parallax {
+        animation: parallax linear both;
+        animation-timeline: scroll(root);
+        animation-range: 0 100vh;
+      }
+    }
+  }
+
   @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
       .reveal {
@@ -74,6 +89,10 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+@keyframes parallax {
+  to { transform: translateY(var(--parallax-shift, 0)); }
 }
 
 @keyframes fadeIn {
