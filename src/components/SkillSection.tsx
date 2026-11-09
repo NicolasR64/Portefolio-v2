@@ -13,15 +13,15 @@ export default function SkillSection({ skills }: SkillSectionProps) {
             <h2 className="text-primary">Skills</h2>
             <div className="flex flex-wrap mb-4">
                 {SKILL_CATEGORIES.map((skillCategory) => (
-                    <button key={skillCategory} onClick={() => setCategory(skillCategory)} className={`bg-primary/10 text-primary p-2 rounded-md m-1 hover:bg-primary/20 transition ${category === skillCategory ? "bg-primary/20" : ""}`}>
+                    <button key={skillCategory} onClick={() => setCategory(skillCategory)} className={`bg-primary p-2 rounded-md m-1 hover:bg-primary/20 hover:text-primary transition ${category === skillCategory ? "bg-primary/20 text-primary" : "text-background"}`}>
                         {skillCategory}
                     </button>
                 ))}
             </div>
-            <div className="flex flex-wrap" id="skillsContainer">
-                {skills.filter(skill => skill.categories.includes(category)).map((skill) => (
-                    <a key={skill.name} href={skill.link} target="_blank" rel="noopener noreferrer" className="flex items-center bg-primary/10 text-primary p-2 rounded-md m-1 hover:bg-primary/20 transition">
-                        <img src={skill.image} alt={skill.name} className="w-6 h-6 mr-2" />
+            <div className="flex flex-wrap gap-2 justify-center" id="skillsContainer">
+                {skills.filter(skill => skill.categories.includes(category)).map((skill, index) => (
+                    <a key={category + skill.name} href={skill.link} target="_blank" rel="noopener noreferrer" className={`flex flex-col items-center bg-primary/10 text-primary p-4 rounded-md m-1 hover:bg-primary/20 transition w-3xs opacity-0 transform-[translateY(20px)]`} style={{ animation: `fadeInSkills 0.5s ease forwards ${index * 0.1}s` }}>
+                        <img src={skill.image} alt={skill.name} className="w-full mx-auto" />
                         <span>{skill.name}</span>
                     </a>
                 ))}

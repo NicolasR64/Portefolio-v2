@@ -68,13 +68,13 @@ export const experiences: Experience[] = [
 export const skills: Skill[] = [
     {
         name: "React",
-        image: "/images/react.png",
+        image: easiLogo,
         link: "https://react.dev/",
         categories: ["Frontend"]
     },
     {
         name: "TypeScript",
-        image: "/images/typescript.png",
+        image: easiLogo,
         link: "https://www.typescriptlang.org/",
         categories: ["Frontend", "Backend"]
     },
