@@ -32,6 +32,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
 
   body {
@@ -84,6 +85,19 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .nav-link {
+    @apply relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 h-0.5 w-full bg-current scale-x-0 origin-center transition-transform duration-300 ease-out;
+  }
+
+  .nav-link:hover::after,.nav-link:focus-visible::after {
+    @apply scale-x-100;
   }
 
   .section-dark {

@@ -13,6 +13,18 @@ function App() {
 
   return (
     <>
+      <nav className="fixed top-0 left-0 w-full z-50 section-dark">
+        <div className="flex justify-between items-center p-4 md:p-6">
+          <a href="#hero" className="text-primary text-xl font-bold">Nicolas Ravaux</a>
+          <div className="space-x-4">
+            <a href="#about" className="nav-link text-accent">About</a>
+            <a href="#experience" className="nav-link text-accent">Experience</a>
+            <a href="#projects" className="nav-link text-accent">Projects</a>
+            <a href="#skills" className="nav-link text-accent">Skills</a>
+            <a href="#contact" className="nav-link text-accent">Contact</a>
+          </div>
+        </div>
+      </nav>
       <main className="w-full">
         <Hero />
         <AboutSection />

@@ -6,7 +6,7 @@ type ExperiencesectionProps = {
 
 export default function ExperienceSection({ experiences }: ExperiencesectionProps) {
     return (
-        <section className="place-content-center mx-auto p-6 md:p-12">
+        <section id="experience" className="place-content-center mx-auto p-6 md:p-12">
             <h2>Experience</h2>
             {experiences.map((exp, index) => {
                 const isEven = index % 2 === 0;
