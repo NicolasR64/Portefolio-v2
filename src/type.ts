@@ -28,4 +28,10 @@ export type Experience = {
     type: "Professional Experience" | "Personal Project"
 }
 
+export type ContactLink = {
+    label: string
+    value: string
+    href: string
+    download?: boolean
+}
 

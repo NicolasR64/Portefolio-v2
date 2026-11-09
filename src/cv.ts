@@ -1,4 +1,4 @@
-import type { Experience, Project, Skill } from './type'
+import type { Experience, Project, Skill, ContactLink } from './type'
 import easiLogo from './assets/img/Logo_Easi.gif'
 
 export const projects: Project[] = [
@@ -138,4 +138,28 @@ export const skills: Skill[] = [
         link: "https://www.ibm.com/products/lotus-notes",
         categories: ["Frontend","Backend"]
     }
+]
+
+export const contactLinks: ContactLink[] = [
+    {
+        label: "Email",
+        value: "nicolasravaux64@gmail.com",
+        href: "mailto:nicolasravaux64@gmail.com",
+    },
+    {
+        label: "LinkedIn",
+        value: "Nicolas Ravaux",
+        href: "https://www.linkedin.com/in/nicolas-ravaux-232114290/",
+    },
+    {
+        label: "GitHub",
+        value: "NicolasR64",
+        href: "https://github.com/NicolasR64",
+    },
+    {
+        label: "Resume",
+        value: "Download PDF",
+        href: "/RavauxNicolas_CV.pdf",
+        download: true,
+    },
 ]

@@ -1,3 +1,4 @@
+import ContactSection from "./components/ContactSection.tsx"
 import ExperienceSection from "./components/ExperienceSection.tsx"
 import Hero from "./components/Hero.tsx"
 import ProjectSection from "./components/ProjectSection.tsx"
@@ -63,6 +64,10 @@ function App() {
         <WaveDivider color="fill-background-dark" flip />
         <ProjectSection projects={projects} />
         <SkillSection skills={skills} />
+        <WaveDivider color="fill-background-dark" />
+        <div className="section-dark">
+          <ContactSection />
+        </div>
       </main>
     </>
   )
