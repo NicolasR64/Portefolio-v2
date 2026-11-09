@@ -22,7 +22,7 @@ export default function SkillSection({ skills }: SkillSectionProps) {
     }, [])
 
     return (
-        <section id="skills" className="place-content-center mx-auto py-12">
+        <section id="skills" className="place-content-center mx-auto p-6 md:p-12">
             <h2 className="text-primary">Skills</h2>
             <div className="flex flex-wrap mb-4">
                 {SKILL_CATEGORIES.map((skillCategory) => (

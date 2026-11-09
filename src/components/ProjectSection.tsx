@@ -6,7 +6,7 @@ type ProjectSectionProps = {
 
 export default function ProjectSection({ projects }: ProjectSectionProps) {
     return (
-        <section id="projects" className="place-content-center mx-auto py-12">
+        <section id="projects" className="place-content-center mx-auto p-6 md:p-12">
             <h2 className="text-primary">Projects</h2>
             {projects.map((project, index) => {
                 const isEven = index % 2 === 0;
@@ -20,7 +20,7 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
                             <div className={`${imageColumns} md:row-start-1 h-auto w-full flex items-center justify-center`}>
                                 <img className="w-full rounded-xl" src={project.image} alt={project.title} />
                             </div>
-                            <div className={`${textColumns} md:row-start-1 pl-4 py-12 ${textAlign}`}>
+                            <div className={`${textColumns} md:row-start-1 pl-4 py-6 md:py-12 ${textAlign}`}>
                                 <h3 className="text-primary">{project.title}</h3>
                                 <p className="text-accent">{project.type} · {project.date}</p>
                                 <p className={`relative z-10 ${overlap} bg-background p-4 my-4 rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.4)]`}>{project.description}</p>

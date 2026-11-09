@@ -6,7 +6,7 @@ type ExperiencesectionProps = {
 
 export default function ExperienceSection({ experiences }: ExperiencesectionProps) {
     return (
-        <section className="place-content-center mx-auto py-12">
+        <section className="place-content-center mx-auto p-6 md:p-12">
             <h2>Experience</h2>
             {experiences.map((exp, index) => {
                 const isEven = index % 2 === 0;
@@ -20,7 +20,7 @@ export default function ExperienceSection({ experiences }: ExperiencesectionProp
                             <div className={`${imageColumns} md:row-start-1 h-auto w-full flex items-center justify-center`}>
                                 <img className="w-full rounded-xl" src={exp.image} alt={exp.title} />
                             </div>
-                            <div className={`${textColumns} md:row-start-1 pl-4 py-12 ${textAlign}`}>
+                            <div className={`${textColumns} md:row-start-1 pl-4 py-6 md:py-12 ${textAlign}`}>
                                 <h3>{exp.title}</h3>
                                 <p className="text-accent">{exp.startDate} - {exp.endDate}</p>
                                 <p className={`relative z-10 ${overlap} bg-background p-4 my-4 rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.4)]`}>{exp.description}</p>
