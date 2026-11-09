@@ -68,6 +68,13 @@ function App() {
         <div className="section-dark">
           <ContactSection />
         </div>
+        <div className="bg-background p-2 fixed rounded-full bottom-5 right-5 animate-bounce">
+          <a href="#hero">
+            <svg className="size-6" fill="#2F5D46" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="#2F5D46">
+              <path d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+          </a>
+        </div>
       </main>
     </>
   )
