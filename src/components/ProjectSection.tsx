@@ -18,7 +18,7 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
                     return (
                         <div key={project.title} className="grid sm:grid-row md:grid-cols-12 pt-8 reveal">
                             <div className={`${imageColumns} md:row-start-1 h-auto w-full flex items-center justify-center`}>
-                                <img className="w-full rounded-xl" src={project.image} alt={project.title} />
+                                <img className="w-full rounded-xl" src={project.image} alt={project.title} loading="lazy" decoding="async" />
                             </div>
                             <div className={`${textColumns} md:row-start-1 pl-4 py-6 md:py-12 ${textAlign}`}>
                                 <h3 className="text-primary">{project.title}</h3>

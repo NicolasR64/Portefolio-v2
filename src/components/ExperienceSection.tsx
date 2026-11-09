@@ -18,7 +18,7 @@ export default function ExperienceSection({ experiences }: ExperiencesectionProp
                     return (
                         <div key={exp.startDate} className="grid sm:grid-row md:grid-cols-12 pt-8 reveal">
                             <div className={`${imageColumns} md:row-start-1 h-auto w-full flex items-center justify-center`}>
-                                <img className="w-full rounded-xl" src={exp.image} alt={exp.title} />
+                                <img className="w-full rounded-xl" src={exp.image} alt={exp.title} loading="lazy" decoding="async" />
                             </div>
                             <div className={`${textColumns} md:row-start-1 pl-4 py-6 md:py-12 ${textAlign}`}>
                                 <h3>{exp.title}</h3>
