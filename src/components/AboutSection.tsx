@@ -5,9 +5,9 @@ export default function AboutSection() {
         <div id="about" className="relative isolate overflow-hidden">
             <svg className="absolute inset-0 -z-10 w-full h-full" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <pattern id="a" width="29" height="50.115" patternTransform="scale(2)" patternUnits="userSpaceOnUse"><rect width="100%" height="100%" fill="#E3EBDF"/><path fill="none" stroke="#1F3A2E" strokeOpacity="0.1" strokeWidth="1" d="M14.498 16.858 0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z"/></pattern>
+                    <pattern id="about-pattern" width="29" height="50.115" patternTransform="scale(2)" patternUnits="userSpaceOnUse"><rect width="100%" height="100%" fill="#E3EBDF"/><path fill="none" stroke="#1F3A2E" strokeOpacity="0.1" strokeWidth="1" d="M14.498 16.858 0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z"/></pattern>
                 </defs>
-                <rect width="800%" height="800%" fill="url(#a)" transform="translate(0 -.46)"/>
+                <rect width="800%" height="800%" fill="url(#about-pattern)" transform="translate(0 -.46)"/>
             </svg>
             <section className="mx-auto px-4 py-20">
                 <div className="bg-background rounded-2xl shadow-[0_8px_30px_rgba(31,58,46,0.12)] px-6 py-10 md:px-14 md:py-14">
