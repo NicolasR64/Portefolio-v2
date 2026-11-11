@@ -10,8 +10,8 @@ type TimelineItemProps = {
 
 export default function TimelineItem({ index, title, subtitle, description, image, links, technologies }: TimelineItemProps) {
     const isEven = index % 2 === 0
-    const imageColumns = isEven ? "md:col-start-1 md:col-end-7" : "md:col-start-6 md:col-end-13"
-    const textColumns = isEven ? "md:col-start-7 md:col-end-13" : "md:col-start-1 md:col-end-6"
+    const imageColumns = isEven ? "md:col-start-1 md:col-end-7" : "md:col-start-7 md:col-end-13"
+    const textColumns = isEven ? "md:col-start-7 md:col-end-13" : "md:col-start-1 md:col-end-7"
     const textAlign = isEven ? "text-right" : "text-left"
     const overlap = isEven ? "md:-ml-24" : "md:-mr-24"
     const technologiesAlign = isEven ? "flex-row-reverse" : "flex-row"
