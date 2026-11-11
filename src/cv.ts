@@ -3,61 +3,51 @@ import easiLogo from './assets/img/Logo_Easi.gif'
 
 export const projects: Project[] = [
     {
-        title: "Portfolio",
-        description: "My personal portfolio website, built with React and TypeScript.",
-        date: "2023-01-01",
+        title: "Redroosters – Ice hockey team manager",
+        description: "Web application built for the Redroosters ice hockey club as a five-person team project for the Internet Technology course. Members can register, manage their profile and confirm their attendance at events, while admins organise events, leagues and invitations, with automatic email reminders. Built on a hand-made PHP MVC architecture.",
+        date: "2022",
         image: easiLogo,
-        links: [],
-        technologies: ["React", "TypeScript", "CSS"],
-        type: "Web Development"
+        links: ["https://github.com/NicolasR64/Redroosters"],
+        technologies: ["PHP", "MVC", "SQL", "JavaScript", "PHPMailer", "HTML", "CSS"],
+        type: "School project for a real client"
     },
     {
-        title: "Portfolio",
-        description: "My personal portfolio website, built with React and TypeScript.",
-        date: "2023-01-01",
+        title: "Portfolio v1 – Rebuilt from a visual reference",
+        description: "Personal challenge: rebuild an existing portfolio using only its visual appearance as a reference, without looking at its code. Once finished, I compared my implementation with the original to analyse the differences and improve my front-end skills.",
+        date: "2022",
         image: easiLogo,
-        links: [],
-        technologies: ["React", "TypeScript", "CSS"],
-        type: "Web Development"
-    },    
-    {
-        title: "Portfolio",
-        description: "My personal portfolio website, built with React and TypeScript.",
-        date: "2023-01-01",
-        image: easiLogo,
-        links: [],
-        technologies: ["React", "TypeScript", "CSS"],
-        type: "Web Development"
+        links: ["https://github.com/NicolasR64/Portefolio"],
+        technologies: ["JavaScript", "HTML", "CSS", "particles.js"],
+        type: "Personal project"
     }
-
 ]
 
 export const experiences: Experience[] = [
     {
-        title: "Software Developer – ERP Adfinity (Easi)",
-        description: "Software developer on Adfinity, the ERP built by Easi and used by 10,000+ users. Full-stack development with WinDev/WLanguage, back-end REST APIs and SQL Server databases.",
-        startDate: "2024-07-01",
-        endDate: "2024-12-31",
+        title: "Software Developer – Adfinity ERP (Easi, Nivelles)",
+        description: "Full-stack developer on Adfinity, a financial ERP used by more than 10,000 people, working on strategic modules: inventory, purchasing, sales and signing. I fixed critical bugs and maintained a large WinDev codebase, then spent my last year building and deploying the back-end REST API supporting the move to a web version, including a PDA integration.",
+        startDate: "Jul 2024",
+        endDate: "Jun 2026",
         image: easiLogo,
         links: [],
-        technologies: ["WinDev", "WLanguage", "SQL Server", "REST API", "C#"],
+        technologies: ["WinDev", "WLanguage", "SQL Server", "REST API", "PDA integration"],
         type: "Professional Experience",
     },
     {
-        title: "IT Consultant (Easi)",
-        description: "Enterprise IT consultant at Easi (Nivelles), working on business software projects for clients before moving to the Adfinity ERP development team.",
-        startDate: "2023-09-01",
-        endDate: "2024-06-30",
+        title: "Microsoft Consultant (Easi, Nivelles)",
+        description: "Consultant on the Microsoft ecosystem, designing and delivering business solutions with the Power Platform. I analysed critical business flows, designed asynchronous workflows and real-time synchronisation between systems, and integrated external APIs such as Stripe payments and webhooks.",
+        startDate: "Sep 2023",
+        endDate: "Jun 2024",
         image: easiLogo,
         links: [],
-        technologies: ["Javascript", "jQuery", "HTML", "CSS", "react", "Power Platform", "Lotus Notes"],
+        technologies: ["Power Apps", "Power Automate", "Azure Functions", "SharePoint Online", "Stripe API", "Webhooks"],
         type: "Professional Experience",
     },
     {
-        title: "Internship (Easi)",
-        description: "**Internship at Easi (Nivelles), working on business software projects for clients before moving to the Adfinity ERP development team.",
-        startDate: "2023-02-01",
-        endDate: "2023-05-31",
+        title: "Internship (Easi, Nivelles)",
+        description: "Final internship of my bachelor's degree in application development at HELHa, which led to my hiring at Easi.",
+        startDate: "Feb 2023",
+        endDate: "May 2023",
         image: easiLogo,
         links: [],
         technologies: ["WinDev", "SQL Server", "Power Platform"],
