@@ -1,5 +1,7 @@
 import { contactLinks } from '../cv'
 
+const currentYear = new Date().getFullYear()
+
 export default function ContactSection() {
     return (
         <section id="contact" className="mx-auto px-4 pt-12 pb-20">
@@ -32,7 +34,7 @@ export default function ContactSection() {
             </div>
 
             <p className="mt-16 text-sm text-foreground/60">
-                © {new Date().getFullYear()} Nicolas Ravaux
+                © { currentYear } Nicolas Ravaux
             </p>
         </section>
     )
