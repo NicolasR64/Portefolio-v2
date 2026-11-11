@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import useInView from "../hooks/useInView.ts"
 
 const NAV_LINKS = [
     { href: "#about", label: "About" },
@@ -8,9 +9,26 @@ const NAV_LINKS = [
     { href: "#contact", label: "Contact" },
 ]
 
+const ACTIVE_ZONE = "-45% 0px -54% 0px"
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
     const close = () => setIsOpen(false)
+    const heroVisible = useInView("hero", true)
+    const aboutFocus = useInView("about", false, ACTIVE_ZONE, 0)
+    const experienceFocus = useInView("experience", false, ACTIVE_ZONE, 0)
+    const projectsFocus = useInView("projects", false, ACTIVE_ZONE, 0)
+    const skillsFocus = useInView("skills", false, ACTIVE_ZONE, 0)
+    const contactFocus = useInView("contact", false, ACTIVE_ZONE, 0)
+
+    const sectionInView: Record<string, boolean> = {
+        "#about": aboutFocus,
+        "#experience": experienceFocus,
+        "#projects": projectsFocus,
+        "#skills": skillsFocus,
+        "#contact": contactFocus,
+    }
+    const activeHref = NAV_LINKS.find((link) => sectionInView[link.href])?.href
 
     useEffect(() => {
         if (!isOpen) return
@@ -37,12 +55,12 @@ export default function Navbar() {
 
     return (
         <nav aria-label="Main" className="fixed top-0 left-0 w-full z-50 section-dark">
-            <div className="relative z-20 bg-background flex justify-between items-center p-4 md:p-6">
+            <div className={`relative z-20 bg-background flex justify-between items-center p-4 md:p-6 motion-safe:transition-shadow duration-300 ${heroVisible ? "" : "shadow-lg"}`}>
                 <a href="#hero" onClick={close} className="text-primary text-xl font-bold">Nicolas Ravaux</a>
 
                 <div className="hidden md:flex gap-4">
                     {NAV_LINKS.map((link) => (
-                        <a key={link.href} href={link.href} className="nav-link text-accent">{link.label}</a>
+                        <a key={link.href} href={link.href} aria-current={activeHref === link.href ? "true" : undefined} className="nav-link text-accent">{link.label}</a>
                     ))}
                 </div>
 
@@ -75,6 +93,7 @@ export default function Navbar() {
                         key={link.href}
                         href={link.href}
                         onClick={close}
+                        aria-current={activeHref === link.href ? "true" : undefined}
                         className={`nav-link self-start text-2xl font-serif text-accent motion-safe:transition-all duration-300 ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}`}
                         style={{ transitionDelay: isOpen ? `${150 + index * 50}ms` : "0ms" }}
                     >

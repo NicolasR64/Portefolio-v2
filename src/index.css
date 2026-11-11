@@ -96,7 +96,7 @@
     @apply absolute left-0 -bottom-1 h-0.5 w-full bg-current scale-x-0 origin-center transition-transform duration-300 ease-out;
   }
 
-  .nav-link:hover::after,.nav-link:focus-visible::after {
+  .nav-link:hover::after,.nav-link:focus-visible::after,.nav-link[aria-current="true"]::after {
     @apply scale-x-100;
   }
 
