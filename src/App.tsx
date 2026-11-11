@@ -30,7 +30,7 @@ function App() {
         <div className="section-dark">
           <ContactSection />
         </div>
-        <a href="#hero" aria-label="Back to top" className={`bg-background p-2 fixed rounded-full bottom-5 right-5 motion-safe:transition-all motion-safe:duration-500 ease-in-out ${heroVisible ? "opacity-0 translate-y-4 pointer-events-none invisible" : "opacity-100 translate-y-0 visible motion-safe:delay-500 motion-safe:animate-bounce"}`}>
+        <a href="#hero" aria-label="Back to top" className={`bg-background p-2 fixed rounded-full bottom-5 right-5 motion-safe:transition-all motion-safe:duration-300 ease-in-out ${heroVisible ? "opacity-0 translate-y-4 pointer-events-none invisible" : "opacity-100 translate-y-0 visible motion-safe:delay-500 motion-safe:animate-bounce"}`}>
           <svg className="size-6" fill="#2F5D46" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="#2F5D46">
             <path d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
           </svg>
