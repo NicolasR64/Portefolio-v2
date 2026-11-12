@@ -34,8 +34,8 @@ export default function SkillSection({ skills }: SkillSectionProps) {
             <div className="overflow-hidden motion-safe:transition-[height] motion-safe:duration-500 ease-in-out" style={{ height }}>
                 <div ref={contentRef} className="flex flex-wrap gap-2 justify-center min-h-32" id="skillsContainer">
                     {skills.filter(skill => skill.categories.includes(category)).map((skill, index) => (
-                        <a key={category + skill.name} href={skill.link} target="_blank" rel="noopener noreferrer" className={`flex flex-col items-center bg-primary/10 text-primary p-4 rounded-md m-1 hover:bg-primary/20 transition w-3xs motion-safe:opacity-0 motion-safe:transform-[translateY(20px)] motion-safe:animate-[fadeInSkills_0.5s_ease_forwards]`} style={{ animationDelay: `${index * 0.1}s` }}>
-                            <img src={skill.image} alt={skill.name} loading="lazy" decoding="async" className="w-full mx-auto" />
+                        <a key={category + skill.name} href={skill.link} target="_blank" rel="noopener noreferrer" className={`flex flex-col items-center gap-2 bg-primary/10 text-primary text-sm p-3 rounded-md m-1 hover:bg-primary/20 transition w-28 motion-safe:opacity-0 motion-safe:transform-[translateY(20px)] motion-safe:animate-[fadeInSkills_0.5s_ease_forwards]`} style={{ animationDelay: `${index * 0.1}s` }}>
+                            <img src={skill.image} alt={skill.name} loading="lazy" decoding="async" width={48} height={48} className="size-12 object-contain" />
                             <span>{skill.name}</span>
                         </a>
                     ))}
