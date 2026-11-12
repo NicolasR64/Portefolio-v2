@@ -1,5 +1,6 @@
 import type { Experience, Project, Skill, ContactLink } from './type'
 import easiLogo from './assets/img/Logo_Easi.gif'
+import portfolioLogo from './assets/img/portfolio-hero.png'
 import angularLogo from './assets/img/angular.png'
 import bootstrapLogo from './assets/img/bootstrap.svg'
 import canvaLogo from './assets/img/canva.svg'
@@ -17,6 +18,15 @@ import typescriptLogo from './assets/img/typescript.svg'
 import windevLogo from './assets/img/windev.png'
 
 export const projects: Project[] = [
+    {
+        title: "Portfolio v2 – Designed and built from scratch",
+        description: "The site you are browsing, designed and developed from scratch around a forest theme. It features a parallax hero, scroll-triggered animations, a filterable skills section, a navbar that highlights the current section and a mobile side menu. Built with custom React hooks on top of IntersectionObserver and ResizeObserver, with accessibility in mind: keyboard navigation, reduced-motion support and checked colour contrast.",
+        date: "2026",
+        image: portfolioLogo,
+        links: [],
+        technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+        type: "Personal project"
+    },
     {
         title: "Redroosters – Ice hockey team manager",
         description: "Web application built for the Redroosters ice hockey club as a five-person team project for the Internet Technology course. Members can register, manage their profile and confirm their attendance at events, while admins organise events, leagues and invitations, with automatic email reminders. Built on a hand-made PHP MVC architecture.",
