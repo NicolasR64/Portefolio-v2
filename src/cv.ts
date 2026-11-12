@@ -1,5 +1,20 @@
 import type { Experience, Project, Skill, ContactLink } from './type'
 import easiLogo from './assets/img/Logo_Easi.gif'
+import angularLogo from './assets/img/angular.png'
+import bootstrapLogo from './assets/img/bootstrap.svg'
+import canvaLogo from './assets/img/canva.svg'
+import cssLogo from './assets/img/css.svg'
+import figmaLogo from './assets/img/figma.svg'
+import gitLogo from './assets/img/git.svg'
+import githubLogo from './assets/img/github.svg'
+import htmlLogo from './assets/img/html.svg'
+import javaLogo from './assets/img/java.svg'
+import javascriptLogo from './assets/img/javascript.png'
+import jqueryLogo from './assets/img/jquery.png'
+import sqlLogo from './assets/img/sql.png'
+import ssmsLogo from './assets/img/ssms.png'
+import typescriptLogo from './assets/img/typescript.svg'
+import windevLogo from './assets/img/windev.png'
 
 export const projects: Project[] = [
     {
@@ -57,6 +72,12 @@ export const experiences: Experience[] = [
 
 export const skills: Skill[] = [
     {
+        name: "Angular",
+        image: angularLogo,
+        link: "https://angular.dev/",
+        categories: ["Frontend"]
+    },
+    {
         name: "React",
         image: easiLogo,
         link: "https://react.dev/",
@@ -64,69 +85,111 @@ export const skills: Skill[] = [
     },
     {
         name: "TypeScript",
-        image: easiLogo,
+        image: typescriptLogo,
         link: "https://www.typescriptlang.org/",
         categories: ["Frontend", "Backend"]
     },
     {
         name: "JavaScript",
-        image: "/images/javascript.png",
+        image: javascriptLogo,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         categories: ["Frontend"]
     },
     {
         name: "HTML",
-        image: "/images/html.png",
+        image: htmlLogo,
         link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
         categories: ["Frontend"]
     },
     {
         name: "CSS",
-        image: "/images/css.png",
+        image: cssLogo,
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
         categories: ["Frontend"]
     },
     {
-        name: "SQL Server",
-        image: "/images/sqlserver.png",
-        link: "https://www.microsoft.com/en-us/sql-server",
-        categories: ["Database"]
+        name: "Bootstrap",
+        image: bootstrapLogo,
+        link: "https://getbootstrap.com/",
+        categories: ["Frontend"]
+    },
+    {
+        name: "jQuery",
+        image: jqueryLogo,
+        link: "https://jquery.com/",
+        categories: ["Frontend"]
+    },
+    {
+        name: "Java",
+        image: javaLogo,
+        link: "https://dev.java/",
+        categories: ["Backend"]
     },
     {
         name: "WinDev",
-        image: "/images/windev.png",
+        image: windevLogo,
         link: "https://www.pcsoft.fr/windev/",
-        categories: ["Frontend","Backend"]
+        categories: ["Frontend", "Backend"]
     },
     {
         name: "WLanguage",
-        image: "/images/wlanguage.png",
+        image: windevLogo,
         link: "https://www.pcsoft.fr/wlanguage/",
         categories: ["Backend"]
     },
     {
         name: "Power Platform",
-        image: "/images/powerplatform.png",
+        image: easiLogo,
         link: "https://powerplatform.microsoft.com/",
-        categories: ["Frontend","Backend"]
+        categories: ["Frontend", "Backend"]
     },
     {
         name: "C#",
-        image: "/images/csharp.png",
+        image: easiLogo,
         link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
         categories: ["Backend"]
     },
     {
-        name: "jQuery",
-        image: "/images/jquery.png",
-        link: "https://jquery.com/",
-        categories: ["Frontend"]
+        name: "Lotus Notes",
+        image: easiLogo,
+        link: "https://www.ibm.com/products/lotus-notes",
+        categories: ["Frontend", "Backend"]
     },
     {
-        name: "Lotus Notes",
-        image: "/images/lotusnotes.png",
-        link: "https://www.ibm.com/products/lotus-notes",
-        categories: ["Frontend","Backend"]
+        name: "SQL Server",
+        image: sqlLogo,
+        link: "https://www.microsoft.com/en-us/sql-server",
+        categories: ["Database"]
+    },
+    {
+        name: "SSMS",
+        image: ssmsLogo,
+        link: "https://learn.microsoft.com/en-us/ssms/",
+        categories: ["Database"]
+    },
+    {
+        name: "Git",
+        image: gitLogo,
+        link: "https://git-scm.com/",
+        categories: ["DevOps"]
+    },
+    {
+        name: "GitHub",
+        image: githubLogo,
+        link: "https://github.com/",
+        categories: ["DevOps"]
+    },
+    {
+        name: "Figma",
+        image: figmaLogo,
+        link: "https://www.figma.com/",
+        categories: ["Other"]
+    },
+    {
+        name: "Canva",
+        image: canvaLogo,
+        link: "https://www.canva.com/",
+        categories: ["Other"]
     }
 ]
 
