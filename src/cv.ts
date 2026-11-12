@@ -1,6 +1,8 @@
 import type { Experience, Project, Skill, ContactLink } from './type'
-import easiLogo from './assets/img/Logo_Easi.gif'
-import portfolioLogo from './assets/img/portfolio-hero.png'
+import easiGif from './assets/img/Logo_Easi.gif'
+import easiLogo from './assets/img/Easi_logo.png'
+import portfolioV2Logo from './assets/img/portfolio-v2.webp'
+import portfolioV1Logo from './assets/img/portfolio-v1.webp'
 import angularLogo from './assets/img/angular.png'
 import bootstrapLogo from './assets/img/bootstrap.svg'
 import canvaLogo from './assets/img/canva.svg'
@@ -16,15 +18,29 @@ import sqlLogo from './assets/img/sql.png'
 import ssmsLogo from './assets/img/ssms.png'
 import typescriptLogo from './assets/img/typescript.svg'
 import windevLogo from './assets/img/windev.png'
+import reactLogo from './assets/img/React_Logo_SVG.svg'
+import powerplatformLogo from './assets/img/Microsoft_Power_Platform_logo.svg'
+import lotusScriptLogo from './assets/img/IBM_Notes_9_logo.png'
+import cSharpLogo from './assets/img/C_Sharp_Logo_2023.svg'
+import firstWebsiteLogo from './assets/img/first-website.webp'
 
 export const projects: Project[] = [
     {
         title: "Portfolio v2 – Designed and built from scratch",
-        description: "The site you are browsing, designed and developed from scratch around a forest theme. It features a parallax hero, scroll-triggered animations, a filterable skills section, a navbar that highlights the current section and a mobile side menu. Built with custom React hooks on top of IntersectionObserver and ResizeObserver, with accessibility in mind: keyboard navigation, reduced-motion support and checked colour contrast.",
+        description: "The site you are browsing, designed and developed from scratch around a forest theme.",
         date: "2026",
-        image: portfolioLogo,
+        image: portfolioV2Logo,
         links: [],
         technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+        type: "Personal project"
+    },
+    {
+        title: "Portfolio v1 – Rebuilt from a visual reference",
+        description: "Personal challenge: rebuild an existing portfolio using only its visual appearance as a reference, without looking at its code. Once finished, I compared my implementation with the original to analyse the differences and improve my front-end skills.",
+        date: "2022",
+        image: portfolioV1Logo,
+        links: ["https://github.com/NicolasR64/Portefolio"],
+        technologies: ["JavaScript", "HTML", "CSS", "particles.js"],
         type: "Personal project"
     },
     {
@@ -37,35 +53,35 @@ export const projects: Project[] = [
         type: "School project for a real client"
     },
     {
-        title: "Portfolio v1 – Rebuilt from a visual reference",
-        description: "Personal challenge: rebuild an existing portfolio using only its visual appearance as a reference, without looking at its code. Once finished, I compared my implementation with the original to analyse the differences and improve my front-end skills.",
+        title: "First website",
+        description: "This project was part of my first year of studies and aimed to help me learn HTML and CSS. It was my first major school project, allowing me to apply these web development skills in a practical context.",
         date: "2022",
-        image: easiLogo,
-        links: ["https://github.com/NicolasR64/Portefolio"],
-        technologies: ["JavaScript", "HTML", "CSS", "particles.js"],
-        type: "Personal project"
+        image: firstWebsiteLogo,
+        links: [],
+        technologies: ["HTML", "CSS"],
+        type: "School project"
     }
 ]
 
 export const experiences: Experience[] = [
     {
         title: "Software Developer – Adfinity ERP (Easi, Nivelles)",
-        description: "Full-stack developer on Adfinity, a financial ERP used by more than 10,000 people, working on strategic modules: inventory, purchasing, sales and signing. I fixed critical bugs and maintained a large WinDev codebase, then spent my last year building and deploying the back-end REST API supporting the move to a web version, including a PDA integration.",
+        description: "Full-stack developer on Adfinity, a financial ERP used by more than 10,000 people. Spent my last year building and deploying the back-end REST API supporting the move to a web version.",
         startDate: "Jul 2024",
         endDate: "Jun 2026",
-        image: easiLogo,
+        image: easiGif,
         links: [],
         technologies: ["WinDev", "WLanguage", "SQL Server", "REST API", "PDA integration"],
         type: "Professional Experience",
     },
     {
         title: "Microsoft Consultant (Easi, Nivelles)",
-        description: "Consultant on the Microsoft ecosystem, designing and delivering business solutions with the Power Platform. I analysed critical business flows, designed asynchronous workflows and real-time synchronisation between systems, and integrated external APIs such as Stripe payments and webhooks.",
+        description: "Consultant on the Microsoft ecosystem, designing and delivering business solutions with the Power Platform.",
         startDate: "Sep 2023",
         endDate: "Jun 2024",
         image: easiLogo,
         links: [],
-        technologies: ["Power Apps", "Power Automate", "Azure Functions", "SharePoint Online", "Stripe API", "Webhooks"],
+        technologies: ["Power Apps", "Power Automate", "Azure Functions", "SharePoint Online", "Stripe API", "Webhooks", "Graph API"],
         type: "Professional Experience",
     },
     {
@@ -89,7 +105,7 @@ export const skills: Skill[] = [
     },
     {
         name: "React",
-        image: easiLogo,
+        image: reactLogo,
         link: "https://react.dev/",
         categories: ["Frontend"]
     },
@@ -149,19 +165,19 @@ export const skills: Skill[] = [
     },
     {
         name: "Power Platform",
-        image: easiLogo,
+        image: powerplatformLogo,
         link: "https://powerplatform.microsoft.com/",
         categories: ["Frontend", "Backend"]
     },
     {
         name: "C#",
-        image: easiLogo,
+        image: cSharpLogo,
         link: "https://learn.microsoft.com/en-us/dotnet/csharp/",
         categories: ["Backend"]
     },
     {
         name: "Lotus Notes",
-        image: easiLogo,
+        image: lotusScriptLogo,
         link: "https://www.ibm.com/products/lotus-notes",
         categories: ["Frontend", "Backend"]
     },
