@@ -1,6 +1,6 @@
 import type { Experience, Project, Skill, ContactLink } from './type'
 import easiGif from './assets/img/Logo_Easi.gif'
-import easiLogo from './assets/img/Easi_logo.png'
+import easiLogo from './assets/img/easi-logo.webp'
 import portfolioV2Logo from './assets/img/portfolio-v2.webp'
 import portfolioV1Logo from './assets/img/portfolio-v1.webp'
 import angularLogo from './assets/img/angular.png'
@@ -20,7 +20,7 @@ import typescriptLogo from './assets/img/typescript.svg'
 import windevLogo from './assets/img/windev.png'
 import reactLogo from './assets/img/React_Logo_SVG.svg'
 import powerplatformLogo from './assets/img/Microsoft_Power_Platform_logo.svg'
-import lotusScriptLogo from './assets/img/IBM_Notes_9_logo.png'
+import lotusNotesLogo from './assets/img/IBM_Notes_9_logo.png'
 import cSharpLogo from './assets/img/C_Sharp_Logo_2023.svg'
 import firstWebsiteLogo from './assets/img/first-website.webp'
 
@@ -177,7 +177,7 @@ export const skills: Skill[] = [
     },
     {
         name: "Lotus Notes",
-        image: lotusScriptLogo,
+        image: lotusNotesLogo,
         link: "https://www.ibm.com/products/lotus-notes",
         categories: ["Frontend", "Backend"]
     },
