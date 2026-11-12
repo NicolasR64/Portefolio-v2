@@ -78,28 +78,30 @@ export default function Navbar() {
                 </button>
             </div>
 
-            <div
-                onClick={close}
-                aria-hidden="true"
-                className={`md:hidden fixed inset-0 z-0 bg-black/50 motion-safe:transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-            />
+            <div className="md:hidden fixed inset-0 z-0 overflow-hidden pointer-events-none">
+                <div
+                    onClick={close}
+                    aria-hidden="true"
+                    className={`absolute inset-0 bg-black/50 motion-safe:transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0"}`}
+                />
 
-            <div
-                id="mobile-menu"
-                className={`md:hidden fixed top-0 right-0 z-10 h-dvh w-3/4 max-w-xs bg-background shadow-2xl pt-28 px-8 flex flex-col gap-6 motion-safe:transition-all duration-300 ease-out ${isOpen ? "translate-x-0 visible" : "translate-x-full invisible"}`}
-            >
-                {NAV_LINKS.map((link, index) => (
-                    <a
-                        key={link.href}
-                        href={link.href}
-                        onClick={close}
-                        aria-current={activeHref === link.href ? "true" : undefined}
-                        className={`nav-link self-start text-2xl font-serif text-accent motion-safe:transition-all duration-300 ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}`}
-                        style={{ transitionDelay: isOpen ? `${150 + index * 50}ms` : "0ms" }}
-                    >
-                        {link.label}
-                    </a>
-                ))}
+                <div
+                    id="mobile-menu"
+                    className={`absolute top-0 right-0 h-full w-3/4 max-w-xs bg-background shadow-2xl pt-28 px-8 flex flex-col gap-6 pointer-events-auto motion-safe:transition-all duration-300 ease-out ${isOpen ? "translate-x-0 visible" : "translate-x-full invisible"}`}
+                >
+                    {NAV_LINKS.map((link, index) => (
+                        <a
+                            key={link.href}
+                            href={link.href}
+                            onClick={close}
+                            aria-current={activeHref === link.href ? "true" : undefined}
+                            className={`nav-link self-start text-2xl font-serif text-accent motion-safe:transition-all duration-300 ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}`}
+                            style={{ transitionDelay: isOpen ? `${150 + index * 50}ms` : "0ms" }}
+                        >
+                            {link.label}
+                        </a>
+                    ))}
+                </div>
             </div>
         </nav>
     )
