@@ -60,7 +60,6 @@
 }
 
 @layer components {
-  /* Parallaxe du hero : chaque couche descend de --parallax-shift pendant le premier écran de scroll */
   @supports (animation-timeline: scroll()) {
     @media (prefers-reduced-motion: no-preference) {
       .parallax {
@@ -71,9 +70,7 @@
     }
   }
 
-  /* Apparition au scroll : useReveal() ajoute .reveal-ready sur <html>
-     puis .is-visible sur chaque .reveal quand il entre à l'écran.
-     Sans JS ou avec animations réduites, le contenu reste simplement visible. */
+
   @media (prefers-reduced-motion: no-preference) {
     .reveal-ready .reveal {
       opacity: 0;
