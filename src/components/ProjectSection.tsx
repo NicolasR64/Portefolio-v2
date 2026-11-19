@@ -17,6 +17,7 @@ export default function ProjectSection({ projects }: ProjectSectionProps) {
                     subtitle={`${project.type} · ${project.date}`}
                     description={project.description}
                     image={project.image}
+                    imageType={project.imageType}
                     links={project.links}
                     technologies={project.technologies}
                 />

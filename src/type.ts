@@ -3,6 +3,7 @@ export type Project = {
     description: string,
     date: string,
     image: string,
+    imageType?: "screenshot" | "logo"
     links: string[],
     technologies: string[],
     type: string

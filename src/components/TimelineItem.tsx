@@ -4,11 +4,12 @@ type TimelineItemProps = {
     subtitle: string
     description: string
     image: string
+    imageType?: "screenshot" | "logo"
     links: string[]
     technologies: string[]
 }
 
-export default function TimelineItem({ index, title, subtitle, description, image, links, technologies }: TimelineItemProps) {
+export default function TimelineItem({ index, title, subtitle, description, image, imageType, links, technologies }: TimelineItemProps) {
     const isEven = index % 2 === 0
     const imageColumns = isEven ? "md:col-start-1 md:col-end-7" : "md:col-start-7 md:col-end-13"
     const textColumns = isEven ? "md:col-start-7 md:col-end-13" : "md:col-start-1 md:col-end-7"
@@ -19,7 +20,13 @@ export default function TimelineItem({ index, title, subtitle, description, imag
     return (
         <div className="grid grid-cols-1 md:grid-cols-12 pt-8 reveal">
             <div className={`${imageColumns} md:row-start-1 h-auto w-full flex items-center justify-center`}>
-                <img className="w-full rounded-xl" src={image} alt={title} loading="lazy" decoding="async" />
+                {imageType === "logo" ? (
+                    <div className="aspect-video w-full rounded-xl bg-surface shadow-md flex items-center justify-center p-8">
+                        <img src={image} alt={title} loading="lazy" decoding="async" className="max-w-full max-h-full object-contain" />
+                    </div>
+                ) : (
+                    <img className="w-full rounded-xl" src={image} alt={title} loading="lazy" decoding="async" />
+                )}
             </div>
             <div className={`${textColumns} md:row-start-1 pl-4 py-6 md:py-12 ${textAlign}`}>
                 <h3>{title}</h3>

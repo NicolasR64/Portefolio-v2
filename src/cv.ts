@@ -23,6 +23,7 @@ import powerplatformLogo from './assets/img/Microsoft_Power_Platform_logo.svg'
 import lotusNotesLogo from './assets/img/IBM_Notes_9_logo.png'
 import cSharpLogo from './assets/img/C_Sharp_Logo_2023.svg'
 import firstWebsiteLogo from './assets/img/first-website.webp'
+import redroosterLogo from './assets/img/redRooster.png'
 
 export const projects: Project[] = [
     {
@@ -30,6 +31,7 @@ export const projects: Project[] = [
         description: "The site you are browsing, designed and developed from scratch around a forest theme.",
         date: "2026",
         image: portfolioV2Logo,
+        imageType: "screenshot",
         links: [],
         technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
         type: "Personal project"
@@ -39,6 +41,7 @@ export const projects: Project[] = [
         description: "Personal challenge: rebuild an existing portfolio using only its visual appearance as a reference, without looking at its code. Once finished, I compared my implementation with the original to analyse the differences and improve my front-end skills.",
         date: "2022",
         image: portfolioV1Logo,
+        imageType: "screenshot",
         links: ["https://github.com/NicolasR64/Portefolio"],
         technologies: ["JavaScript", "HTML", "CSS", "particles.js"],
         type: "Personal project"
@@ -47,7 +50,8 @@ export const projects: Project[] = [
         title: "Redroosters – Ice hockey team manager",
         description: "Web application built for the Redroosters ice hockey club as a five-person team project for the Internet Technology course. Members can register, manage their profile and confirm their attendance at events, while admins organise events, leagues and invitations, with automatic email reminders. Built on a hand-made PHP MVC architecture.",
         date: "2022",
-        image: easiLogo,
+        image: redroosterLogo,
+        imageType: "logo",
         links: ["https://github.com/NicolasR64/Redroosters"],
         technologies: ["PHP", "MVC", "SQL", "JavaScript", "PHPMailer", "HTML", "CSS"],
         type: "School project for a real client"
@@ -57,6 +61,7 @@ export const projects: Project[] = [
         description: "This project was part of my first year of studies and aimed to help me learn HTML and CSS. It was my first major school project, allowing me to apply these web development skills in a practical context.",
         date: "2022",
         image: firstWebsiteLogo,
+        imageType: "screenshot",
         links: [],
         technologies: ["HTML", "CSS"],
         type: "School project"
