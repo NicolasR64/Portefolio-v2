@@ -11,7 +11,7 @@ export default function ContactSection() {
                 The fastest way to reach me is by email.
             </p>
 
-            <div className="grid gap-4 sm:grid-cols-2 max-w-3xl mx-auto text-left">
+            <div className="grid gap-4 lg:grid-cols-[auto_1fr_1fr] max-w-5xl mx-auto text-left">
                 {contactLinks.map((link) => {
                     const isExternal = link.href.startsWith("http")
                     return (
@@ -25,7 +25,7 @@ export default function ContactSection() {
                         >
                             <span>
                                 <span className="block text-sm uppercase tracking-widest text-accent mb-1">{link.label}</span>
-                                <span className="block text-lg font-medium break-all">{link.value}</span>
+                                <span className="block text-base sm:text-lg font-medium whitespace-nowrap">{link.value}</span>
                             </span>
                             <span className="text-primary text-2xl transition group-hover:translate-x-1" aria-hidden="true">→</span>
                         </a>

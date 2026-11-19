@@ -240,10 +240,4 @@ export const contactLinks: ContactLink[] = [
         value: "NicolasR64",
         href: "https://github.com/NicolasR64",
     },
-    {
-        label: "Resume",
-        value: "Download PDF",
-        href: "/RavauxNicolas_CV.pdf",
-        download: true,
-    },
 ]
