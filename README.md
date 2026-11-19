@@ -2,7 +2,7 @@
 
 My personal portfolio, designed and built from scratch around a forest theme.
 
-**🔗 Live site: _coming soon_**
+**🔗 [my website](https://nicolasravaux.be)**
 
 ![Portfolio preview](src/assets/img/portfolio-v2.webp)
 
